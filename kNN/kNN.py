@@ -69,7 +69,7 @@ def classifyPerson():
     datingDateMat,datingLabels=file2matrix('datingTestSet2.txt')
     normMat,ranges,minVals=autoNorm(datingDateMat)
     inArr=array([ffMiles,percentTags,iceCream])
-    classifierResult=knn((inArr-minVals)/rages,normMat,datingLabels,3)
+    classifierResult=knn((inArr-minVals)/ranges,normMat,datingLabels,3)
     print "You will probably like this person: ",resultList[classifierResult-1]
 
 
